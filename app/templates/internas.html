@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body_class %}{{ block.super }} internas {% endblock %}
+{% block main %}
+<div class="faixa-topo">
+    <div class="center">
+        <div class="letra paddingdentro fadeIn wow">
+            <p>{% block name %}Teste{% endblock %}</p>
+        </div>
+    </div>
+</div>
+<section class="conteudo">
+        {% block interna %}{% endblock %}
+</section>
+<div class="faixa-baixo"></div>
+{% endblock %}
